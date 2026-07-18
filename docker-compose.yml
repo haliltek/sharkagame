@@ -1,0 +1,9 @@
+services:
+  sharka-web:
+    build: .
+    container_name: sharka-web
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
